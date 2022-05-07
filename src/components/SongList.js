@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-// import reactRedux from "react-redux";
 import selectSongAction from "../actions";
 
 const SongList = (props) => {
@@ -13,7 +12,6 @@ const SongList = (props) => {
             <img
               className="right floated mini ui image"
               src="https://st.depositphotos.com/1924257/3652/i/450/depositphotos_36528877-stock-photo-headphones-with-love-music-symbol.jpg"
-              
             />
             <div className="header">{val.name}</div>
             <div className="meta">Friends of Veronika</div>
@@ -23,7 +21,12 @@ const SongList = (props) => {
           </div>
           <div className="extra content">
             <div className="ui two buttons">
-              <div onClick={()=> props.selectSongAction(val)} className="ui basic green button">Approve</div>
+              <div
+                onClick={() => props.selectSongAction(val)}
+                className="ui basic green button"
+              >
+                Approve
+              </div>
             </div>
           </div>
         </div>
