@@ -3,17 +3,16 @@ import Header from "./Header";
 import SongDetail from "./SongDetail";
 import SongList from "./SongList";
 
-
-
-const App =()=>{
-  return (<div className="ui grid container">
-            <div className="eight wide column">
-              <SongList />
-            </div>
-            <div className="eight wide column">
-            </div>
-          </div>)
-}
+const App = () => {
+  return (
+    <div className="ui grid container">
+      <div className="eight wide column">
+        <SongList />
+      </div>
+      <div className="eight wide column"></div>
+    </div>
+  );
+};
 /*
 const App = () => {
   return (
